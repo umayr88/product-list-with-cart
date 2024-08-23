@@ -21,15 +21,14 @@ body {
 }
 
 .container {
-    position: relative;
-    left: 40px;
-    top: 40px;  
-    right: 40px;
+    display: inline-flex;
     width: 1260px;
+}
+h1{
 }
 
 .dessert-menu{
-    width: 960px;
+    width: 780px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +39,7 @@ body {
 
 .dessert-imgs {
     width: 240px;
+    padding-top: 10px;
 }
 
 .dessert-imgs > img {
@@ -49,9 +49,16 @@ body {
 
 .dessert-imgs > button {
     position: relative;
-    background-color: var(--rose100);
-    border-radius: 10px;
-    width: 120px;
+    bottom: 25px;
+    background-color: var(--rose50);
+    border-color: var(--rose300);
+    border-radius: 30px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-weight: 600;
+    word-spacing: -1px;
 }
 
 .dessert-imgs h4,h5,h6 {
@@ -61,4 +68,23 @@ body {
 
 .dessert-imgs h6{
     color: var(--rose300);
+}
+
+.dessert-imgs h4{
+    color: var(--rose900);
+}
+
+.dessert-imgs h5{
+    color: var(--red);
+}
+
+.dessert-imgs > button > img {
+    position: relative;
+    width: 18px;
+    right: 3px;
+    top: 3px;
+}
+
+.your-cart {    
+    width: 220px;
 }
