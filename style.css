@@ -91,7 +91,7 @@ h1{
 }
 
 .your-cart {
-    display: none;
+    /* display: none; */
     background-color: white;
     border-radius: 10px;
     width: 240px;
@@ -121,10 +121,11 @@ h1{
 }
 
 .your-cart-items {
+    display: none;
     background-color: white;
     border-radius: 10px;
     width: 280px;
-    height: 240px;
+    height: 280px;
     font-family: "Red Hat Text";
     font-weight: 300;    
         
@@ -136,29 +137,43 @@ h1{
     padding-top: 10px;
 }
 
+.order-items > h6 {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
 .order-items > button {
     position: relative;
     float: right;
-    border-radius: 10px;
+    width: 18px;
+    background-color: var(--rose50);
+    border-color: var(--rose300);
+    border-radius: 30px;
 }
 
 .ordercount {
     color: var(--red);
-    padding-left: 5px;
+    padding-left: 20px;
 }
 
 .orderprice {
     color: var(--rose300);
-    padding-left: 5px;
+    padding-left: 20px;
 }
 
 .ordersum {
     color: var(--rose500);
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
-.ordertotal {
+.order-items > p {
+    padding-left: 20px;
+    padding-top: 30px;
+}
 
+.counterp {
+    height: 25px;
+    display: inline;
 }
 
 .sum {
@@ -166,21 +181,34 @@ h1{
 }
 
 .confirmorder {
-    display: block;
     text-align: center;
+    padding-top: 30px;
+
 }
 
 .confirmorder > p {
+    width: 100%;
     border: 1px solid ;
     border-radius: 10px;
     padding-left: 30px;
 }
 
 .confirmorder > button {
-    width: 120px;
-    height: 40px;
-    color: var(--rose50);
+    position: relative;
+    top: 25px;
+    color: white;
     background-color: var(--red);
-    border-radius: 10px;
+    border-color: var(--rose300);
+    border-radius: 30px;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-weight: 600;
+    word-spacing: -1px;
     
 }
+
+.btn-background{
+    background-color: var(--red);
+  }

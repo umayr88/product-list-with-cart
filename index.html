@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" href="style.css">
-  
+  <script src="script.js" defer></script>
   <title> Product list with cart</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
     <div class="dessert-menu">
       <div class="dessert-imgs">
         <img src="assets/images/image-waffle-desktop.jpg" alt="Waffle with berries">
-        <button class="add-to-cart"> <img src="assets/images/icon-add-to-cart.svg" alt=""> Add to Cart</button>
+        <button class="add-to-cart" id="sos"> <img src="assets/images/icon-add-to-cart.svg" alt=""> Add to Cart</button>
         <h6>Waffle</h6>
         <h4>Waffle with Berries</h4>
         <h5>$6.50</h5>
@@ -85,9 +85,9 @@
       <h4>Your cart (0)</h4>
       <div class="order-items">
         <h6>Classic Tiramisu</h6>
-        <button><img src="assets/images/icon-remove-item.svg" alt=""></button>
-        <p><span class="ordercount">1x</span><span class="orderprice">$5.50</span>
+        <p class="counterp"><span class="ordercount">1x</span><span class="orderprice">$5.50</span>
           <span class="ordersum">$5.50</span></p>
+          <button><img src="assets/images/icon-remove-item.svg" alt=""></button>
         <p><span class="ordertotal">Order Total</span><span class="sum">46.50</span></p>
       </div>
       <div class="confirmorder">
@@ -95,7 +95,6 @@
         <button>Confirm Order</button>
       </div>
      </div>
-
   </div>
 </body>
 </html>
